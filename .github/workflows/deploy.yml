@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    uses: Prestek/central-pipelines/.github/workflows/deploy.yml@V0.0.1
+    uses: Prestek/central-pipelines/.github/workflows/deploy.yml@V0.0.2
     with:
       PROJECT_NAME: "NotificationService"       # Nombre de la carpeta/proyecto en la instancia EC2
       IMAGE_NAME: "notification-service"                  # Nombre de la imagen Docker

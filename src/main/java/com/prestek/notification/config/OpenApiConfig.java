@@ -15,7 +15,7 @@ import io.swagger.v3.oas.models.servers.Server;
 @Configuration
 public class OpenApiConfig {
 
-    @Value("${server.port:8080}")
+    @Value("${server.port}")
     private String serverPort;
 
     @Bean
@@ -33,10 +33,10 @@ public class OpenApiConfig {
                 .url("https://choosealicense.com/licenses/mit/");
 
         Info info = new Info()
-                .title("People Service API")
+                .title("Notification Service API")
                 .version("1.0.0")
                 .contact(contact)
-                .description("This API provides endpoints for managing users, credit offers, and credit applications in the Prestek People microservice.")
+                .description("This API provides endpoints for managing notifications in the Prestek Notification microservice.")
                 .termsOfService("https://www.prestek.com/terms")
                 .license(license);
 
